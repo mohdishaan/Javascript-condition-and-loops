@@ -1,0 +1,115 @@
+Ques1: What are conditional statements? Explain conditional statements with syntax and examples.
+
+Sol:
+
+Conditional Statements in javascript:
+
+Conditional statements in JavaScript allow you to perform different actions based on different conditions. They are used to control the flow of execution depending on whether a given condition evaluates to true or false.
+
+Types of Conditional Statements:
+1. if statement
+2. if...else statement
+3. else if statement
+4. switch statement
+
+
+
+1. if statement:
+The if statement executes a block of code only if a specified condition is true.
+
+syntax:
+if (condition) {
+    // Code to be executed if the condition is true
+}
+
+Eg:
+let age = 18;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+//Output: You are eligible to vote
+
+
+
+2. if...else statement:
+The if...else statement executes one block of code if a condition is true and another block(else block) of code if the condition is false
+
+syntax:
+if (condition) {
+    // Code to be executed if the condition is true
+} else {
+    // Code to be executed if the condition is false
+}
+
+Eg:
+let age = 16;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}
+//Output: You are not eligible to vote
+
+
+
+3. else if statement:
+The else if statement is used to specify a new condition to test if the first condition is false
+
+syntax:
+if (condition1) {
+    // Code to be executed if condition1 is true
+} else if (condition2) {
+    // Code to be executed if condition1 is false and condition2 is true
+} else {
+    // Code to be executed if both conditions are false
+}
+
+Eg:
+let score = 85;
+
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else {
+    console.log("Grade: C");
+}
+//Output: Grade: B
+
+
+4. switch statement:
+The switch statement evaluates an expression and matches the expression's value against different cases. It executes the code for the matching case and can use a default case if no match is found. It also uses break statement after every case so that it terminates the flow of switch statement there only.
+
+syntax:
+switch (expression) {
+    case value1:
+        // Code to be executed if expression === value1
+        break;
+    case value2:
+        // Code to be executed if expression === value2
+        break;
+    default:
+        // Code to be executed if no cases match
+}
+
+Eg:
+let day = 2;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+//Output: Tuesday
+
+
